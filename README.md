@@ -1,5 +1,3 @@
-# C-Shark: The Terminal Packet Sniffer
-
 ## Overview
 
 C-Shark is a terminal-only network packet sniffer written in C using the libpcap library.
