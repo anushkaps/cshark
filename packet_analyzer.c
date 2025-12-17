@@ -149,7 +149,6 @@ void process_arp_layer(const unsigned char *packet, int offset) {
 }
 
 // Detailed layer processing functions for packet inspection
-// ############## LLM Generated Code Begins ##############
 void process_ethernet_layer_detailed(const unsigned char *packet, int *offset, int total_len) {
     if (total_len < (int)sizeof(struct ether_header)) {
         printf("🔸 ETHERNET II FRAME (Layer 2)\n\n");
@@ -495,4 +494,3 @@ void process_udp_layer_detailed(const unsigned char *packet, int offset, int tot
         }
     }
 }
-// ############## LLM Generated Code Ends ################

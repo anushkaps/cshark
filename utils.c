@@ -32,7 +32,6 @@ void print_hex_dump(const unsigned char *data, int length, int max_bytes) {
         putchar('\n');
     }
 }
-//############## LLM Generated Code Begins ##############
 // Detailed hex dump with offset column for packet inspection
 void print_hex_dump_detailed(const unsigned char *data, int length, int max_bytes) {
     int to_print = (length < max_bytes) ? length : max_bytes;
@@ -62,7 +61,6 @@ void print_hex_dump_detailed(const unsigned char *data, int length, int max_byte
         putchar('\n');
     }
 }
-// ############## LLM Generated Code Ends ################
 const char* get_port_service(int port) {
     switch (port) {
         case 20:  case 21: return "FTP";

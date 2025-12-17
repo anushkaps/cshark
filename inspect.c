@@ -65,13 +65,11 @@ void detailed_packet_inspection(int packet_id) {
     }
     StoredPacket *sp = &packet_vault[packet_id - 1];
 
-    //############## LLM Generated Code Begins ##############
     // Print fancy header box
     printf("\n");
     printf("╔════════════════════════════════════════════════════════════════════════════╗\n");
     printf("║                    C-SHARK DETAILED PACKET ANALYSIS                        ║\n");
     printf("╚════════════════════════════════════════════════════════════════════════════╝\n");
-    //############## LLM Generated Code Ends ################
     // Packet Summary Section
     printf("\n● PACKET SUMMARY\n\n");
     printf("Packet ID:      #%u\n", sp->packet_id);
@@ -101,14 +99,12 @@ void detailed_packet_inspection(int packet_id) {
     } else {
         puts("Unknown EtherType in detailed view.");
     }
-// ############## LLM Generated Code Begins ##############
     printf("\n");
     printf("╔════════════════════════════════════════════════════════════════════════════╗\n");
     printf("║                         END OF PACKET ANALYSIS                             ║\n");
     printf("╚════════════════════════════════════════════════════════════════════════════╝\n");
     printf("\nPress Enter to continue...");
 }
-// ############## LLM Generated Code Ends ################
 void inspect_last_session(void) {
     if (vault_count == 0) {
         puts("[C-Shark] No packets captured in the last session.");
